@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity CodeMan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- color css files -->
+    <link rel="stylesheet" href="./css/color-1.css" title="Pink   color-1 #d93459" class="altenate-style">
+    <link rel="stylesheet" href="./css/color-2.css" title="Yellow color-2 #ec9412" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-3.css" title="Green  color-3 #1fc586" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-4.css" title="Blue   color-4 #2eb1ed" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-5.css" title="Red    color-5 #cc3a3b" class="altenate-style" disabled>
+</head>
+<body>
+
+    <section class="customizer">
+        <div class="themeCus">
+            <div class="style_switcher_icon">
+                <div></div><div></div><div></div>
+            </div>
+            <div class="style_switcher_menu">
+                <div class="style_menu">
+                    <div class="styleBx">
+                        <h2>Theme Customizer</h2>
+                    </div>
+                    <div class="styleBx">
+                        <h2>Theme Colors</h2>
+                        <div class="colorbox">
+                            <div class="color color-1" onclick="setActiveStyle('Pink   color-1 #d93459')"></div>
+                            <div class="color color-2" onclick="setActiveStyle('Yellow color-2 #ec9412')"></div>
+                            <div class="color color-3" onclick="setActiveStyle('Green  color-3 #1fc586')"></div>
+                            <div class="color color-4" onclick="setActiveStyle('Blue   color-4 #2eb1ed')"></div>
+                            <div class="color color-5" onclick="setActiveStyle('Red    color-5 #cc3a3b')"></div>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle light" id="toggledark">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Dark Mode</h3>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle steel" id="togglesteel">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Glass Mode</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- effect -->
+    <div class="CirclesEffect">
+        <div class="CircleEffect"></div>
+        <div class="CircleEffect"></div>
+    </div>
+
+    <div class="main">
+
+        <!-- header section -->
+        <header class="header">
+            <div class="header_container">
+                <div class="row">
+                    <div class="logo">
+                        <span class="code">Code</span>
+                        <span class="man">Man</span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a>Courses</a>
+                                <ul>
+                                    <li><a href="./courses.html">Courses</a></li>
+                                    <li><a>Course Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Pages</a>
+                                <ul>
+                                    <li><a href="./login.html">Log In</a></li>
+                                    <li><a href="./signup.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="section_container">
+                <a href="./index.html" class="skin">Home</a>
+                <span>/</span>
+                <a>Course Detail</a>
+            </div>
+
+            <!-- course Detail section -->
+            <section class="courseDetailSec section box" id="courseDetail">
+                <div class="courseDeLeft">
+                    <div class="courseName">
+                        <div class="course_title left">
+                            <h2 data_heading="">JavaScript for Absolute Beginners</h2>
+                        </div>
+                        <div class="stars box">
+                            <div class="star_nu" title="Rate/Stars of Course"><span id="course_star">4.5</span><span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>&nbsp;&nbsp;
+                            <div class="rating">(<span>125</span>)Ratings</div>
+                        </div>
+                        <div class="course_detail">
+                            <p>Enrolled Students - 25000</p>
+                            <p>Created by - <a href="#instructor" class="skin">Robert Paul</a></p>
+                            <p>Last Updated - 30/10/2021</p>
+                            <p>Language - English</p>
+                        </div>
+                    </div>
+                    <div class="courseContent">
+                        <p class="title">Course Content</p>
+                        <div class="accordion">
+                            <div class="tab">
+                                <div class="label">
+                                    <span class="icon"></span>
+                                    <span class="name">Language Basics</span>
+                                    <span class="ltime">2 Lessons | 20 Min.</span>
+                                </div>
+                                <div class="content">
+                                    <li class="mark">Lexical Structure<span class="time">06:00</span></li>
+                                    <li class="mark">Values<span class="time">06:00</span></li>
+                                    <li class="mark">Types<span class="time">06:00</span></li>
+                                    <li class="mark">Variables<span class="time">06:00</span></li>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="label">
+                                    <span class="icon"></span>
+                                    <span class="name">Types</span>
+                                    <span class="ltime">2 Lessons | 20 Min.</span>
+                                </div>
+                                <div class="content">
+                                    <li class="mark">Strings<span class="time">06:00</span></li>
+                                    <li class="mark">Booleans<span class="time">06:00</span></li>
+                                    <li class="mark">Null and Undefined<span class="time">06:00</span></li>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="label">
+                                    <span class="icon"></span>
+                                    <span class="name">Control Structure</span>
+                                    <span class="ltime">2 Lessons | 20 Min.</span>
+                                </div>
+                                <div class="content">
+                                    <li class="mark">If / Else<span class="time">06:00</span></li>
+                                    <li class="mark">Switch<span class="time">06:00</span></li>
+                                    <li class="mark">Loops<span class="time">06:00</span></li>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="label">
+                                    <span class="icon"></span>
+                                    <span class="name">Function</span>
+                                    <span class="ltime">2 Lessons | 20 Min.</span>
+                                </div>
+                                <div class="content">
+                                    <li class="mark">Arrow Function<span class="time">06:00</span></li>
+                                    <li class="mark">Parameters<span class="time">06:00</span></li>
+                                    <li class="mark">Return Value<span class="time">06:00</span></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courseOverview">
+                        <p class="title">Overview</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, modi fugit, similique
+                            distinctio, aperiam ad totam nobis aspernatur quos maiores ipsam vel ex veritatis dicta a
+                            rerum neque asperiores perspiciatis ut delectus sed? Ducimus, repudiandae magni ad similique
+                            officiis necessitatibus.</p>
+                        <span>For who is this course designed</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni magnam ipsum dolore
+                            cum enim sequi laborum similique qui beatae, earum cumque non doloremque aut eius harum
+                            assumenda explicabo aliquam nulla. Quas ducimus sed beatae ipsum ex, nulla maiores
+                            similique, impedit dolores sapiente voluptas debitis, cumque nostrum incidunt perspiciatis.
+                            Perferendis error minima nemo adipisci accusamus dolore doloribus aspernatur facilis porro.
+                        </p>
+                        <span>Why should you take this course</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam velit, blanditiis,
+                            atque, quaerat libero laudantium quia suscipit quis omnis beatae officia non magni? Tempora,
+                            provident vel praesentium cupiditate ab accusantium temporibus sed molestias, totam quia
+                            veniam placeat nesciunt unde doloremque aspernatur doloribus minus autem?</p>
+                    </div>
+                    <div class="courseInstructor" id="instructor">
+                        <p class="title">Instructor</p>
+                        <div class="instructor box">
+                            <div class="instructor_img">
+                                <img class="img" src="./Img/People/03.jpg">
+                            </div>
+                            <div class="instructorInfo">
+                                <p class="title">Robert Paul <span>( Web Developer )</span></p>
+                                <p><span class="skin"> * </span>4.5 Ratings</p>
+                                <p><span class="skin"> * </span>10 Courses</p>
+                                <p><span class="skin"> * </span>3000 Reviews</p>
+                                <p><span class="skin"> * </span>5000 Students</p>
+                            </div>
+                        </div>
+                        <div class="instructorText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, consectetur repellat nulla sint beatae tempore labore tenetur ducimus explicabo, blanditiis modi soluta accusamus. Nulla illo magni maiores harum aliquid fugiat, quisquam accusamus enim dolor? Quia iste non minima aperiam adipisci, sunt nostrum, ducimus impedit voluptates, incidunt officiis nemo aspernatur rem dicta! Laboriosam cupiditate cumque facilis tempora eveniet id velit quod fugiat numquam labore eum quas, quam reiciendis quia facere dolores.</p>
+                        </div>
+                    </div>
+                    <div class="studentRating">
+                        <p class="title">Students Feedback</p>
+                        <div class="studFeedback box">
+                            <div class="ratingStar box middle">
+                                <h1>4.5</h1>
+                                <span class="stars box">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star-half-alt" class="svg-inline--fa fa-star-half-alt fa-w-17" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 512"><path fill="currentColor" d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"></path></svg>
+                                </span>
+                            </div>
+                            <div class="ratingLine">
+                                <div class="starRate box">
+                                    <p>5 Star</p>
+                                    <div class="Starline">
+                                        <div class="StarBar" style="width: calc(100% - 14px);"></div>
+                                        <p class="ratePR">100%</p>
+                                    </div>
+                                </div>
+                                <div class="starRate box">
+                                    <p>4 Star</p>
+                                    <div class="Starline">
+                                        <div class="StarBar" style="width: calc(80% - 14px);"></div>
+                                        <p class="ratePR">80%</p>
+                                    </div>
+                                </div>
+                                <div class="starRate box">
+                                    <p>3 Star</p>
+                                    <div class="Starline">
+                                        <div class="StarBar" style="width: calc(60% - 14px);"></div>
+                                        <p class="ratePR">60%</p>
+                                    </div>
+                                </div>
+                                <div class="starRate box">
+                                    <p>2 Star</p>
+                                    <div class="Starline">
+                                        <div class="StarBar" style="width: calc(40% - 14px);"></div>
+                                        <p class="ratePR">40%</p>
+                                    </div>
+                                </div>
+                                <div class="starRate box">
+                                    <p>1 Star</p>
+                                    <div class="Starline">
+                                        <div class="StarBar" style="width: calc(20% - 14px);"></div>
+                                        <p class="ratePR">20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courseDeRight">
+                    <div class="coursePreView">
+                        <div class="courseVideo">
+                            <img class="img" src="./Img/C.jpg">
+                        </div>
+                        <div class="courseInclude">
+                            <div class="box">
+                                <h1>$50</h1>
+                                <p><s>$100</s></p>
+                                <p><span class="skin">50% Off</span></p>
+                            </div>
+                            <div class="includes">
+                                <h2>This course includes :</h2>
+                                <ul>
+                                    <li>Total 30 Lessons</li>
+                                    <li>Life Time Access</li>
+                                    <li>Access On Mobile Or TV</li>
+                                    <li>Certificate Of Completetion</li>
+                                </ul>
+                                <a class="middle btn">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="row box">
+                    <div class="context">
+                        <h1><span class="code">Code</span><span class="man">Man</span></h1>
+                        <div class="context_text">
+                            <p>About</p>
+                            <p>What We Offer</p>
+                            <p>Careeers</p>
+                            <p>Certificates</p>
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Learning</h1>
+                        <div class="context_text">
+                            <p>Get The App</p>
+                            <p>Testimonials</p>
+                            <p>Pricing</p>
+                            <p>Faq</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>More</h1>
+                        <div class="context_text">
+                            <p>Affiliates</p>
+                            <p>Become A course Creater</p>
+                            <p>Training Webinars</p>
+                            <p>Free Personality Test</p>
+                            <p>Help And Support</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Get In Touch</h1>
+                        <div class="context_text">
+                            <p>Facebook</p>
+                            <p>Twitter</p>
+                            <p>Instagram</p>
+                            <p>YouTube</p>
+                            <p>Linkdin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./theme.js"></script>
+    <script>
+        const accordion = document.getElementsByClassName('tab');
+        for (i = 0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active');
+            })
+        }
+    </script>
+
+</body>
+
+</html>

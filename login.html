@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity CodeMan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- color css files -->
+    <link rel="stylesheet" href="./css/color-1.css" title="Pink   color-1 #d93459" class="altenate-style">
+    <link rel="stylesheet" href="./css/color-2.css" title="Yellow color-2 #ec9412" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-3.css" title="Green  color-3 #1fc586" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-4.css" title="Blue   color-4 #2eb1ed" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-5.css" title="Red    color-5 #cc3a3b" class="altenate-style" disabled>
+</head>
+<body>
+
+    <section class="customizer">
+        <div class="themeCus">
+            <div class="style_switcher_icon">
+                <div></div><div></div><div></div>
+            </div>
+            <div class="style_switcher_menu">
+                <div class="style_menu">
+                    <div class="styleBx">
+                        <h2>Theme Customizer</h2>
+                    </div>
+                    <div class="styleBx">
+                        <h2>Theme Colors</h2>
+                        <div class="colorbox">
+                            <div class="color color-1" onclick="setActiveStyle('Pink   color-1 #d93459')"></div>
+                            <div class="color color-2" onclick="setActiveStyle('Yellow color-2 #ec9412')"></div>
+                            <div class="color color-3" onclick="setActiveStyle('Green  color-3 #1fc586')"></div>
+                            <div class="color color-4" onclick="setActiveStyle('Blue   color-4 #2eb1ed')"></div>
+                            <div class="color color-5" onclick="setActiveStyle('Red    color-5 #cc3a3b')"></div>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle light" id="toggledark">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Dark Mode</h3>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle steel" id="togglesteel">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Glass Mode</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- effect -->
+    <div class="CirclesEffect">
+        <div class="CircleEffect"></div>
+        <div class="CircleEffect"></div>
+    </div>
+
+    <div class="main">
+        
+        <!-- header section -->
+        <header class="header">
+            <div class="header_container">
+                <div class="row">
+                    <div class="logo">
+                        <span class="code">Code</span>
+                        <span class="man">Man</span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a>Courses</a>
+                                <ul>
+                                    <li><a href="./courses.html">Courses</a></li>
+                                    <li><a href="./courseDetail.html">Course Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Pages</a>
+                                <ul>
+                                    <li><a>Log In</a></li>
+                                    <li><a href="./signup.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            
+            <!-- log in section -->
+            <section class="loginSec section" id="login">
+                <div class="login shadow">
+                    <div class="section_title">
+                        <h2 data_heading="">Log In To Your Account</h2>
+                    </div>
+                    <div class="login_div">
+                        <input type="email" placeholder="Email">
+                        <p class="right"><a href="./signup.html"><span class="skin">Forgot Password ?</span></a></p>
+                        <input type="password" placeholder="Password">
+                        <input type="button" value="Log In">
+                        <p class="middle">Don't Have An Account ?&nbsp;<a href="./signup.html"><span class="skin">Sign Up</span></a></p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="row box">
+                    <div class="context">
+                        <h1><span class="code">Code</span><span class="man">Man</span></h1>
+                        <div class="context_text">
+                            <p>About</p>
+                            <p>What We Offer</p>
+                            <p>Careeers</p>
+                            <p>Certificates</p>
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Learning</h1>
+                        <div class="context_text">
+                            <p>Get The App</p>
+                            <p>Testimonials</p>
+                            <p>Pricing</p>
+                            <p>Faq</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>More</h1>
+                        <div class="context_text">
+                            <p>Affiliates</p>
+                            <p>Become A course Creater</p>
+                            <p>Training Webinars</p>
+                            <p>Free Personality Test</p>
+                            <p>Help And Support</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Get In Touch</h1>
+                        <div class="context_text">
+                            <p>Facebook</p>
+                            <p>Twitter</p>
+                            <p>Instagram</p>
+                            <p>YouTube</p>
+                            <p>Linkdin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./theme.js"></script>
+    
+</body>
+</html>

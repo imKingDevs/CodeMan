@@ -1,0 +1,28 @@
+:root{
+    animation: anime 20s linear infinite;
+}
+.color-5{
+    border-radius: 10px !important;
+}
+@keyframes anime {
+    0%, 100%{
+        --skin: #b22222;
+        --skin-2: #ffa500;
+        --skin-bg: #b222221a;
+    }
+    25%{
+        --skin: #ffa500;
+        --skin-2: #2e8b57;
+        --skin-bg: #ffa5001a;
+    }
+    50%{
+        --skin: #2e8b57;
+        --skin-2: #4682b4;
+        --skin-bg: #2e8b571a;
+    }
+    75%{
+        --skin: #4682b4;
+        --skin-2: #b22222;
+        --skin-bg: #4682b41a;
+    }
+}

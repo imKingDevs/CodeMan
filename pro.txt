@@ -1,0 +1,202 @@
+<!-- 09 -->
+<div class="itemBox course_deBx dis_none" data_item="web_devloper">
+    <div class="course_img">
+        <img class="img" src="./Img/I.jpg">
+    </div>
+    <div class="course_name">
+        <p>Web Devlopment for Beginners</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/09.jpg">
+        </div>
+        <div class="provider_name">
+            <p>Chris Paul</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>855</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>189</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- 10 -->
+<div class="itemBox course_deBx dis_none" data_item="photography">
+    <div class="course_img">
+        <img class="img" src="./Img/H.jpg">
+    </div>
+    <div class="course_name">
+        <p>Photography for Beginners</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/10.jpg">
+        </div>
+        <div class="provider_name">
+            <p>Richard Jans</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>45</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>49</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- 11 -->
+<div class="itemBox course_deBx dis_none" data_item="tour">
+    <div class="course_img">
+        <img class="img" src="./Img/D.jpg">
+    </div>
+    <div class="course_name">
+        <p>Tourism Trainer For Beginner</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/04.jpg">
+        </div>
+        <div class="provider_name">
+            <p>Rina Gal</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>198</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>159</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- 12 -->
+<div class="itemBox course_deBx dis_none" data_item="web_devloper">
+    <div class="course_img">
+        <img class="img" src="./Img/M.jpg">
+    </div>
+    <div class="course_name">
+        <p>Full Web Devlopment for Beginners</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/03.jpg">
+        </div>
+        <div class="provider_name">
+            <p>Robert Paul</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>75</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>79</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- 13 -->
+<div class="itemBox course_deBx dis_none" data_item="food">
+    <div class="course_img">
+        <img class="img" src="./Img/o.jpg">
+    </div>
+    <div class="course_name">
+        <p>Food is Good For Health</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/02.jpg">
+        </div>
+        <div class="provider_name">
+            <p>John Rou</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>2.1K</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>79</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- 14 -->
+<div class="itemBox course_deBx dis_none" data_item="photography">
+    <div class="course_img">
+        <img class="img" src="./Img/K.jpg">
+    </div>
+    <div class="course_name">
+        <p>Marvel Photography for Students</p>
+    </div>
+    <div class="course_provider box">
+        <div class="provider_img">
+            <img class="img" src="./Img/People/13.jpg">
+        </div>
+        <div class="provider_name">
+            <p>Robert Gill</p>
+        </div>
+    </div>
+    <div class="course_review box">
+        <div class="stars">
+            <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+        </div>
+        <div class="students">
+            <div class="stu_nu" title="Students">(<span>49</span>)</div>
+        </div>
+        <div class="fees">
+            <div class="fees_nu" title="Fees">$<span>139</span></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+// /// // /// // 
+    Language Basics
+    2 Lessons | 20 Min.
+        Lexical Structure<span class="time">06:00</span>
+        Values<span class="time">06:00</span>
+        Types<span class="time">06:00</span>
+        Variables<span class="time">06:00</span>
+        
+    Types
+    2 Lessons | 20 Min.
+        Strings<span class="time">06:00</span>
+        Booleans<span class="time">06:00</span>
+        Null and Undefined<span class="time">06:00</span>
+        
+    Control Structure
+    2 Lessons | 20 Min.
+        If / Else<span class="time">06:00</span>
+        Switch<span class="time">06:00</span>
+        Loops<span class="time">06:00</span>
+        
+    Function
+    2 Lessons | 20 Min.
+        Arrow Function<span class="time">06:00</span>
+        Parameters<span class="time">06:00</span>
+        Return Value<span class="time">06:00</span>

@@ -1,0 +1,1600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root{
+    --color-0: #000;
+    --color-1: #111;
+    --color-2: #222;
+    --color-3: #333;
+    --color-4: #444;
+    --color-5: #555;
+    --color-6: #666;
+    --color-7: #777;
+    --color-8: #888;
+    --color-9: #999;
+    --color-a: #aaa;
+    --color-b: #bbb;
+    --color-c: #ccc;
+    --color-d: #ddd;
+    --color-e: #eee;
+    --color-f: #fff;
+    --green-5: #9ae1c9;
+    --red-5: #eaa4a3;
+    --yellow-5: #ecbb9e;
+    /* --blue-5: #81bbc2; */
+    --blue-5: #96bddb;
+    --gold: #daa520;
+    --blur-05: blur(5px);
+    /* --blur-10: blur(10px); */
+    --blur-25: blur(25px);
+    --tran-0: rgba(51, 51, 51, 0.3);
+    --tran-f: rgba(255, 255, 255, 0.3);
+    --lg-bd: 1px solid var(--color-d);
+    --dg-bd: 1px solid var(--color-3)
+}
+.btn{
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color-f);
+    background: var(--skin);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: none;
+    display: flex;
+}
+.box{
+    display: flex;
+}
+.left{
+    position: relative;
+    left: 0;
+    text-align: left !important;
+}
+.right{
+    position: relative;
+    right: 0;
+    text-align: right !important;
+}
+.middle{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 500;
+    padding: 2% 0;
+    color: var(--color-0) !important;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.shadow{
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+@keyframes rotate1{
+    0%{
+        transform: translateX(-50%) translateY(-137.5%) rotate(0);
+    }
+    100%{
+        transform: translateX(-50%) translateY(-137.5%) rotate(360deg);
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: translateX(-50%) translateY(-124%) rotate(0);
+    }
+    100%{
+        transform: translateX(-50%) translateY(-124%) rotate(-360deg);
+    }
+}
+.CirclesEffect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.CircleEffect{
+    position: fixed;
+    display: none;
+    z-index: -99;
+}
+.CircleEffect:nth-child(1){
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 90px;
+    left: 5px;
+}
+.CircleEffect:nth-child(2){
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    bottom: 90px;
+    right: 0px;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--skin-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+}
+.skin{
+    color: var(--skin) !important;
+    text-transform: capitalize;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0 2.5%;
+    border-radius: 25px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0.5% 2.5%;
+}
+.dis_none{
+    display: none !important;
+}
+.dis_course{
+    display: block;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    margin: 5% 0;
+}
+.section_title{
+    padding: 0px 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section_title h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-3);
+    text-transform: capitalize;
+    margin: 5% 0 0;
+}
+.section_title h2::before{
+    content: attr(data_heading);
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--skin);
+}
+.section_container{
+    width: 100%;
+    font-size: 1.05em;
+}
+.section_container span{
+    color: var(--color-4);
+}
+.section_container a{
+    color: var(--color-3);
+}
+
+/* __________ header css __________ */
+
+header{
+    /* position: relative; */
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #0002;
+}
+.header_container{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5%;
+    display: flex;
+}
+.row{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.code{
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--skin);
+}
+.man{
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--color-1);
+}
+.menu{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.menu > ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.menu ul a{
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bolder;
+    line-height: 50px;
+    padding: 0 15px;
+    display: block;
+}
+.menu ul li{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li:hover > a{
+    color: var(--skin);
+}
+.menu ul ul{
+    position: absolute;
+    background: var(--color-e);
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+.menu ul ul li{
+    float: none;
+    width: 200px;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+
+/* __________ customizer css __________ */
+
+section.customizer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+}
+section.customizer .themeCus{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-f);
+    backdrop-filter: blur(05px);
+    transform: translateX(250px);
+    z-index: 99;
+    transition: transform 0.3s linear;
+}
+section.customizer.open .themeCus{
+    transform: translateX(0px);
+    transition: transform 0.3s linear;
+}
+.themeCus .style_switcher_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: var(--skin);
+    line-height: 30px;
+    transition: all 0.3s linear;
+}
+.themeCus .style_switcher_icon div{
+    width: 50%;
+    border: 1px solid var(--color-f);
+    position: relative;
+    top: 45%;
+    left: 25%;
+    transition: all 0.3s linear;
+    z-index: 10;
+}
+.themeCus .style_switcher_icon div:nth-child(1),
+.themeCus .style_switcher_icon div:nth-child(3){
+    width: 35%;
+    left: 32.5%;
+}
+.themeCus .style_switcher_icon div:nth-child(1){
+    top: 30%;
+}
+.themeCus .style_switcher_icon div:nth-child(3){
+    top: 60%;
+}
+.themeCus .style_switcher_icon:hover div:nth-child(1),
+.themeCus .style_switcher_icon:hover div:nth-child(3){
+    width: 50%;
+    left: 25%;
+    top: 30%;
+    transition: all 0.3s linear;
+}
+.themeCus .style_switcher_icon:hover div:nth-child(3){
+    top: 60%;
+}
+section.customizer.open .style_switcher_icon div:nth-child(2){
+    opacity: 0;
+}
+section.customizer.open .style_switcher_icon div:nth-child(1),
+section.customizer.open .style_switcher_icon div:nth-child(3){
+    width: 50%;
+    left: 25%;
+    top: 50%;
+    transform: rotate(45deg);
+}
+section.customizer.open .style_switcher_icon div:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+}
+.themeCus .style_switcher_menu{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: -1;
+    text-align: center;
+    overflow: hidden;
+}
+.styleBx{
+    padding: 5%;
+    border-bottom: 1px solid var(--color-8);
+}
+.style_menu{
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    transition: all 0.3s linear;
+}
+.styleBx:nth-child(1) h2{
+    padding: 10px 0;
+    color: var(--color-1);
+}
+.styleBx:nth-child(2) h2{
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: var(--color-2);
+}
+.themeCus .style_switcher_menu .colorbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+}
+.themeCus .style_switcher_menu .colorbox .color{
+    width: 30px;
+    height: 30px;
+    margin: 1.5px;
+    border-radius: 50%;
+    display: flex;
+    transition: all 0.3s linear;
+}
+.themeCus .style_switcher_menu .colorbox .color:hover{
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.color-1{background: #b22222;}
+.color-2{background: #ffa500;}
+.color-3{background: #2e8b57;}
+.color-4{background: #4682b4;}
+.color-5{background: radial-gradient( #b22222, #ffa500, #2e8b57, #4682b4);}
+
+.toggle{
+    width: 50px;
+    height: 25px;
+    background: var(--skin);
+    position: relative;
+    left: 20px;
+    transform: translateY(25%);
+    border-radius: 25px;
+    padding: 2px;
+}
+h3{
+    position: relative;
+    width: 150px;
+    line-height: 35px;
+    color: var(--color-2);
+}
+.toggle.dark .mode,
+.toggle.glass .mode{
+    width: 50%;
+    height: 100%;
+    background: var(--color-0);
+    border-radius: 50%;
+    transform: translateX(100%);
+    transition: 0.5s all;
+}
+.toggle.glass .mode{
+    background: #fff5;
+    backdrop-filter: blur(100px);
+}
+.toggle.light .mode,
+.toggle.steel .mode{
+    width: 50%;
+    height: 100%;
+    background: var(--color-f);
+    border-radius: 50%;
+    transform: translateX(0%);
+    transition: 0.5s all;
+}
+
+/* __________ homeSec css __________ */
+
+.homeSec{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.homeSec > .box:nth-child(1){
+    height: 80vh;
+}
+.home_text{
+    max-width: 50%;
+    flex: 0 0 50%;
+    height: 90%;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.home_text p{
+    color: var(--skin);
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.home_text h1{
+    color: var(--color-0);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.home_text h4{
+    color: var(--color-5);
+    margin-bottom: 40px;
+}
+.home_img{
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 90%;
+}
+.home_img .img_box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_img .img_box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* __________ Count css __________ */
+
+.count{
+    width: 100%;
+    height: 12vh;
+    background: var(--color-f);
+    border-radius: 10px;
+}
+.counting{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counting .count_number{
+    font-size: 2.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.counting:nth-child(1) .count_number{
+    color: var(--blue-5);
+}
+.counting:nth-child(2) .count_number{
+    color: var(--green-5);
+}
+.counting:nth-child(3) .count_number{
+    color: var(--red-5);
+}
+.counting:nth-child(4) .count_number{
+    color: var(--yellow-5);
+}
+.counting .count_title{
+    font-size: 1.2em;
+    color: var(--color-5);
+}
+
+/* __________ courses css __________ */
+
+.course_div{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+}
+.course_deBx{
+    width: 25%;
+    margin: 1%;
+    position: relative;
+}
+.course_img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 180px;
+}
+.course_img img{
+    border-radius: 5px;
+}
+.course_name{
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--color-1);
+    line-height: 30px;
+}
+.course_name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.course_provider .provider_img{
+    width: 25px;
+    height: 25px;
+}
+.course_provider .provider_img img{
+    border-radius: 50%;
+}
+.course_provider .provider_name{
+    padding: 0 10px;
+    color: var(--color-3);
+}
+.course_review{
+    width: 100%;
+}
+.stars{
+    width: 40%;
+    color: var(--gold);
+}
+.stars .star_icon{
+    font-size: 1.5em;
+    line-height: 15px;
+}
+.students{
+    width: 30%;
+    color: var(--color-2);
+    text-align: center;
+}
+.fees{
+    width: 30%;
+    font-weight: 900;
+    color: var(--skin);
+    text-align: right;
+}
+.rating{
+    color: var(--color-5);
+}
+
+/* __________ feedback css __________ */
+
+.testi_box{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 15px;
+}
+.testi_slider{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.testi_slider_container{
+    display: flex;
+    transition: margin 1s ease;
+    align-items: center;
+}
+.testi_slider_container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50%;
+    transform: translateX(-50%) translateY(-137.5%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid var(--skin);
+    border-left-color: #0000;
+    animation: rotate1 1.6s linear infinite;
+}
+.testi_slider_container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50%;
+    transform: translateX(-50%) translateY(-124%);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 1px solid var(--skin);
+    border-right-color: #0000;
+    animation: rotate2 1.6s linear infinite;
+}
+.testi_item{
+    padding: 30px;
+    position: relative;
+    text-align: center;
+}
+.testi_item p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-6);
+    margin: 0 0 30px;
+}
+.testi_item img{
+    position: relative;
+    width: 125px;
+    height: 125px;
+    transform: scale(0.5);
+    margin: 10%;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+.testi_item.active img{
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+.testi_item span{
+    display: block;
+    margin: 10px 0 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-5);
+    text-transform: capitalize;
+}
+.testi_slider_nav{
+    margin-top: 30px;
+    text-align: center;
+    user-select: none;
+}
+.testi_slider_nav span{
+    height: 40px;
+    width: 40px;
+    background: var(--skin);
+    color: var(--color-f);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 4px;
+    line-height: 35px;
+}
+
+/* __________ instructor css __________ */
+
+.instructor{
+    width: 80%;
+    background: var(--color-f);
+    padding: 2%;
+    margin: 10% 0 0;
+    border-radius: 25px;
+}
+.instru_img{
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+.instru_img img{
+    background: var(--color-6);
+    width: 80%;
+    margin: 0 10%;
+    border-radius: 50%;
+}
+.instru_text{
+    max-width: 50%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.instru_text h3{
+    font-size: 1.5em;
+    color: var(--skin);
+    margin: 2.5% 0;
+}
+.instru_text h1{
+    font-size: 2.5em;
+    color: var(--color-5);
+    margin: 0 0 5%;
+}
+.instru_text a{
+    margin: 2.5% 0 0;
+}
+
+/* __________ footer css __________ */
+
+footer{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #0002;
+}
+.footer_container{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5%;
+}
+footer .context{
+    flex: 0 0 25%;
+    width: 25%;
+}
+.context:nth-child(1) h1{
+    font-size: 12px;
+}
+.context h1{
+    font-size: 20px;
+    margin: 7.5% 0;
+    font-weight: 100;
+    color: var(--color-0);
+}
+.context p{
+    margin: 5% 0;
+    line-height: 12px;
+    color: var(--color-5);
+}
+
+
+/* _________________________
+_____ Courses Page css _____
+_________________________ */
+
+.list_names{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.list_names .list{
+    list-style: none;
+    border: 1px solid var(--color-2);
+    color: var(--color-0);
+    padding: 0.5% 0.8%;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+.list_names .list.active{
+    border: 1px solid var(--skin) !important;
+    background: var(--skin) !important;
+    color: var(--color-f) !important;
+}
+.course_product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.course_product .itemBox{
+    width: 22%;
+}
+.course_product .itemBox.hide{
+    display: none;
+}
+.course_product .itemBox.active{
+    display: block;
+}
+.courses_btn .btn{
+    margin: 0 1%;
+}
+
+
+/* _________________________
+_____ CourseDetail css _____
+_________________________ */
+
+.courseDetailSec{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.courseDetailSec > div > div{
+    background: var(--color-f);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+/* ----- --- Left --- ----- */
+.courseDeLeft{
+    width: 63.5%;
+    flex: 0 0 63.5%;
+    margin-right: 1.5%;
+}
+.courseDeLeft > div{
+    padding: 1% 2% 4%;
+    margin: 2.5% 0;
+    border-radius: 5px;
+}
+.courseDeLeft > div:nth-child(1){
+    margin: 0 0 2.5%;
+}
+.courseName{
+    height: fit-content;
+    padding: 0 2% 2% !important;
+}
+.courseName .course_title h2{
+    position: relative;
+    left: 0;
+    font-size: 20px;
+    padding: 15px 0;
+    color: var(--color-0);
+}
+.courseName .course_detail{
+    color: var(--color-5);
+}
+.courseContent{width: 100%;}
+.accordion{
+    position: relative;
+    width: 95%;
+    border: 1px solid var(--color-9);
+    border-radius: 10px;
+    margin: 0 2.5%;
+}
+.tab{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--color-9);
+}
+.tab:last-child{
+    border: none;
+}
+.tab .label{
+    width: 100%;
+    position: relative;
+    padding: 2% 2.5%;
+    line-height: 18px;
+    font-size: 1.045em;
+}
+.tab.active .label{
+    border-bottom: 1px solid var(--color-9);
+}
+.label .name{
+    position: relative;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 2%;
+    color: var(--color-2);
+}
+.label .ltime{
+    padding: 0 2%;
+    position: absolute;
+    right: 0;
+    color: var(--color-2);
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 0;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0s ease-in-out;
+}
+.tab.active .content{
+    height: 100%;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+.mark{
+    width: 100%;
+    position: relative;
+    padding: 0.75% 2%;
+    color: var(--color-4);
+}
+.mark .time{
+    padding: 0 2%;
+    position: absolute;
+    right: 0;
+}
+.courseOverview{width: 100%;}
+.courseOverview span{
+    font-weight: 100;
+    color: var(--color-1);
+    line-height: 30px;
+}
+.courseOverview p{
+    font-weight: 100;
+    color: var(--color-7);
+}
+.courseInstructor .instructor{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+}
+.instructor .instructor_img{
+    width: 20%;
+}
+.instructor img{
+    border-radius: 25px;
+}
+.instructorInfo{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.instructorInfo p.title span{
+    color: var(--color-3);
+}
+.instructorInfo p{
+    line-height: 25px;
+    color: var(--color-5);
+}
+.instructorText p{
+    color: var(--color-7);
+}
+.studentRating{
+    width: 100%;
+}
+.ratingStar{
+    position: relative;
+    width: 35%;
+    flex: 0 0 35%;
+    height: 140px;
+    flex-direction: column;
+}
+.ratingStar h1{
+    color: var(--color-0);
+    font-size: 2.5em;
+}
+svg{
+    width: 50px;
+}
+.ratingLine{
+    width: 65%;
+    flex: 0 0 65%;
+}
+.starRate{
+    width: 100%;
+    flex: 0 0 100%;
+}
+.starRate > p{
+    font-size: 16px;
+    color: var(--gold);
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.Starline{
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    transform: translateX(10px);
+    background: var(--skin-bg);
+}
+.StarBar{
+    background: var(--skin);
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
+}
+.ratePR{
+    position: absolute;
+    right: -12%;
+    color: var(--color-3);
+}
+/* ----- --- Right --- ----- */
+.courseDeRight{
+    width: 33.5%;
+    flex: 0 0 33.5%;
+    margin-left: 1.5%;
+}
+.courseDeRight > div{
+    border-radius: 5px;
+}
+.coursePreView{
+    position: relative;
+    padding: 5%;
+}
+.coursePreView .courseVideo{
+    padding: 2.5%;
+}
+.coursePreView img{
+    border-radius: 10px;
+}
+.coursePreView .courseVideo::before{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(./Play.svg);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.courseInclude{
+    width: 100%;
+}
+.courseInclude h1{
+    padding: 0 2%;
+    color: var(--color-1);
+}
+.courseInclude p{
+    width: 20%;
+}
+.courseInclude s{
+    line-height: 30px;
+    padding: 0 2%;
+    color: var(--color-4);
+}
+.courseInclude span{
+    line-height: 30px;
+    padding: 0 2%;
+}
+.includes h2{
+    font-weight: 500;
+    color: var(--color-2);
+    padding: 5px;
+}
+.includes ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px;
+}
+.includes li{
+    color: var(--color-4);
+    padding: 2.5px;
+}
+.includes li::marker,
+.mark::marker{
+    color: var(--skin);
+}
+
+
+/* _________________________
+_____ Log In Page css _____
+_________________________ */
+
+.login,
+.signup{
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    background: var(--color-f);
+    border-radius: 10px;
+}
+.login_div,
+.signup_div,
+.message_div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 5%;
+}
+.login_div input,
+.signup_div input,
+.message_div input,
+.message_div textarea{
+    width: 100%;
+    height: 40px;
+    margin: 2% 0;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--color-c);
+    border-radius: 5px;
+    padding: 0 2.5%;
+    font-size: 1.05em;
+    color: var(--color-4);
+}
+.login_div input:placeholder-shown,
+.signup_div input:placeholder-shown,
+.message_div input:placeholder-shown,
+.message_div textarea:placeholder-shown{
+    font-size: 1.05em;
+}
+.login_div input:focus,
+.signup_div input:focus,
+.message_div input:focus,
+.message_div textarea:focus{
+    border-color: var(--skin);
+}
+.login_div input[type="button"],
+.signup_div input[type="button"],
+.message_div input[type="button"]{
+    background: var(--skin);
+    color: var(--color-f);
+    border: none;
+    outline: none;
+}
+.login_div .middle,
+.signup_div .middle,
+.message_div .middle{
+    display: flex;
+    padding: 2% 0 5% 0;
+    color: var(--color-6);
+}
+
+
+/* _________________________
+_____ Message Page css _____
+_________________________ */
+
+.address,
+.message{
+    width: 100%;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+}
+.message{
+    background: var(--color-f);
+    border-radius: 10px;
+}
+.message_div .sms:placeholder-shown{
+    line-height: 30px;
+}
+.message_div textarea{
+    height: 100px;
+    resize: none;
+}
+ul.info{
+    position: relative;
+    margin: 20px 0;
+}
+ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+ul.info li > span{
+    font-size: 30px;
+    width: 10%;
+    height: 50px;
+    overflow: hidden;
+    filter: invert(1);
+}
+ul.info li .box{
+    flex-direction: column;
+}
+ul.info li .box h2{
+    color: var(--color-3);
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+ul.info li .box span{
+    color: var(--color-4);
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+
+/* ------------------------------------------------- */
+/* ---------- ---------- Theme ---------- ---------- */
+/* ------------------------------------------------- */
+
+/* __________ __________ Light __________ __________ */
+/* all is makes in Light color to no do in htis! */
+
+
+/* __________ __________ Dark __________ __________ */
+body.dark{
+    background: var(--color-2);
+}
+body.dark .btn{
+    color: var(--color-0);
+}
+body.dark .title{
+    color: var(--color-f) !important;
+}
+body.dark .shadow{
+    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.1);
+}
+body.dark .section_title h2{
+    color: var(--color-c);
+}
+body.dark .section_container span{
+    color: var(--color-b);
+}
+body.dark .section_container a{
+    color: var(--color-c);
+}
+body.dark header{
+    border-bottom-color: #fff2;
+}
+body.dark .man{
+    color: var(--color-e);
+}
+body.dark .menu ul a{
+    color: var(--color-e);
+}
+body.dark .menu ul li:hover > a{
+    color: var(--skin);
+}
+body.dark .menu ul ul{
+    background: var(--color-1);
+}
+body.dark section.customizer .themeCus{
+    background: var(--color-3);
+}
+body.dark .themeCus .style_switcher_icon div{
+    border-color: var(--color-0);
+}
+body.dark .styleBx{
+    border-bottom-color: var(--color-7);
+}
+body.dark .styleBx:nth-child(1) h2{
+    color: var(--color-e);
+}
+body.dark .styleBx:nth-child(2) h2{
+    color: var(--color-d);
+}
+body.dark .themeCus h3{
+    color: var(--color-d);
+}
+body.dark .toggle.glass .mode{
+    background: #0005;
+}
+body.dark .toggle.steel .mode{
+    background: var(--color-0);
+}
+body.dark .home_text h1{
+    color: var(--color-f);
+}
+body.dark .home_text h4{
+    color: var(--color-a);
+}
+.dark .count{
+    background: var(--color-3);
+}
+.dark .counting .count_title{
+    color: var(--color-a);
+}
+.dark .course_name{
+    color: var(--color-e);
+}
+.dark .course_provider .provider_name{
+    color: var(--color-c);
+}
+.dark .students{
+    color: var(--color-d);
+}
+.dark .rating{
+    color: var(--color-a);
+}
+.dark .testi_item p{
+    color: var(--color-9);
+}
+.dark .testi_item span{
+    color: var(--color-a);
+}
+.dark .testi_slider_nav span{
+    color: var(--color-0);
+}
+.dark .instructor{
+    background: var(--color-3);
+}
+.dark .instru_img img{
+    background: var(--color-9);
+}
+.dark .instru_text h1{
+    color: var(--color-a);
+}
+.dark footer{
+    border-top-color: #fff2;
+}
+.dark .context h1{
+    color: var(--color-f);
+}
+.dark .context p{
+    color: var(--color-a);
+}
+.dark .list_names .list{
+    border-color: var(--color-d);
+    color: var(--color-f);
+}
+.dark .list_names .list.active{
+    border-color: var(--skin) !important;
+    background: var(--skin) !important;
+    color: var(--color-0) !important;
+}
+.dark .courseDetailSec > div > div{
+    background: var(--color-1);
+    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.05);
+}
+.dark .courseName .course_title h2{
+    color: var(--color-f);
+}
+.dark .courseName .course_detail{
+    color: var(--color-a);
+}
+.dark .accordion{
+    border-color: var(--color-6);
+}
+.dark .tab,
+.dark .tab.active .label{
+    border-bottom-color: var(--color-6);
+}
+.dark .label .name,
+.dark .label .ltime{
+    color: var(--color-d);
+}
+.dark .mark{
+    color: var(--color-b);
+}
+.dark .courseOverview span{
+    color: var(--color-e);
+}
+.dark .courseOverview p{
+    color: var(--color-8);
+}
+.dark .instructorInfo p.title span{
+    color: var(--color-c);
+}
+.dark .instructorInfo p{
+    color: var(--color-a);
+}
+.dark .instructorText p{
+    color: var(--color-8);
+}
+.dark .ratingStar h1{
+    color: var(--color-f);
+}
+.dark .ratePR{
+    color: var(--color-c);
+}
+.dark .courseInclude h1{
+    color: var(--color-e);
+}
+.dark .courseInclude s{
+    color: var(--color-b);
+}
+.dark .includes h2{
+    color: var(--color-d);
+}
+.dark .includes li{
+    color: var(--color-b);
+}
+.dark .login,
+.dark .signup,
+.dark .message{
+    background: var(--color-3);
+}
+.dark .login_div input,
+.dark .signup_div input,
+.dark .message_div input,
+.dark .message_div textarea{
+    border-color: var(--color-4);
+    color: var(--color-b);
+}
+.dark .login_div input[type="button"],
+.dark .signup_div input[type="button"],
+.dark .message_div input[type="button"]{
+    color: var(--color-2);
+}
+.dark .login_div .middle,
+.dark .signup_div .middle,
+.dark .message_div .middle{
+    color: var(--color-9);
+}
+.dark ul.info li .box h2{
+    color: var(--color-c);
+}
+.dark ul.info li .box span{
+    color: var(--color-b);
+}
+
+
+/* ------------------------------------------------- */
+/* ---------- ---------- Styles ---------- ---------- */
+/* ------------------------------------------------- */
+
+/* __________ __________ Steel __________ __________ */
+/* all is makes in steel style to no do in htis! */
+
+
+/* __________ __________ Glass __________ __________ */
+body.glass .shadow{
+    box-shadow: none;
+}
+body.glass .CircleEffect{
+    display: block;
+}
+body.glass .CircleEffect:nth-child(1){
+    background: linear-gradient(100deg, var(--skin), var(--skin), var(--color-f));
+}
+body.glass .CircleEffect{
+    background: linear-gradient(-100deg, var(--skin-2), var(--skin-2), var(--color-f));
+}
+body.glass .menu ul ul{
+    background: var(--tran-f);
+    backdrop-filter: var(--blur-25);
+}
+body.glass .menu ul ul li{
+    height: 45px;
+}
+body.glass .main{
+    border: var(--lg-bd);
+    margin: 2.5%;
+    backdrop-filter: var(--blur-05);
+}
+body.glass section.customizer .themeCus{
+    border-left: var(--lg-bd);
+    background: var(--tran-f);
+}
+body.glass .toggle.dark .mode{
+    background: #0005;
+}
+body.glass .toggle.light .mode{
+    background: #fff5;
+}
+body.glass .count{
+    background: var(--tran-f);
+    border: var(--lg-bd);
+    backdrop-filter: var(--blur-25);
+}
+body.glass .instructor{
+    background: var(--tran-f);
+    backdrop-filter: var(--blur-25);
+    border: var(--lg-bd);
+}
+body.glass .instru_img img{
+    background: var(--tran-0);
+    backdrop-filter: var(--blur-25);
+}
+body.glass .list_names .list{
+    border: 1px solid var(--color-b);
+    color: var(--color-2);
+    background: var(--tran-f);
+    backdrop-filter: var(--blur-25);
+}
+body.glass .courseDetailSec > div > div{
+    background: var(--tran-f);
+    backdrop-filter: var(--blur-25);
+    box-shadow: none;
+    border: var(--lg-bd);
+}
+body.glass .accordion{
+    border: 1px solid var(--color-b);
+}
+body.glass .tab,
+body.glass .tab.active .label{
+    border-bottom-color: var(--color-b);
+}
+body.glass .login,
+body.glass .signup,
+body.glass .message{
+    background: var(--tran-f);
+    backdrop-filter: var(--blur-25);
+    border: var(--lg-bd);
+}
+
+
+/* -------------------------------------------------------- */
+/* ---------- ---------- Theme Styles ---------- ---------- */
+/* -------------------------------------------------------- */
+
+/* __________ __________ Light Glass __________ __________ */
+/* __________ __________ Light Steel __________ __________ */
+/* all is makes in Light Steel & Light Glass to no do in htis! */
+
+
+/* __________ __________ Dark Steel __________ __________ */
+/* all is makes in Dark Steel to no do in htis! */
+/* __________ __________ Dark Glass __________ __________ */
+
+body.dark.glass .menu ul ul{
+    background: var(--tran-0);
+}
+body.dark.glass .main{
+    border: var(--dg-bd);
+}
+body.dark.glass section.customizer .themeCus{
+    border-left: var(--dg-bd);
+    background: var(--tran-0);
+}
+body.dark.glass .toggle.dark .mode{
+    background: #fff5;
+}
+body.dark.glass .toggle.light .mode{
+    background: #0005;
+}
+body.dark.glass .count{
+    background: var(--tran-0);
+    border: var(--dg-bd);
+}
+body.dark.glass .instructor{
+    background: var(--tran-0);
+    border: var(--dg-bd);
+}
+body.dark.glass .instru_img img{
+    background: var(--tran-f);
+}
+body.dark.glass .list_names .list{
+    border: 1px solid var(--color-4);
+    color: var(--color-d);
+    background: var(--tran-0);
+}
+body.dark.glass .courseDetailSec > div > div{
+    background: var(--tran-0);
+    border: var(--dg-bd);
+}
+body.dark.glass .accordion{
+    border: 1px solid var(--color-4);
+}
+body.dark.glass .tab,
+body.dark.glass .tab.active .label{
+    border-bottom-color: var(--color-4);
+}
+body.dark.glass .login,
+body.dark.glass .signup,
+body.dark.glass .message{
+    background: var(--tran-0);
+    border: var(--dg-bd);
+}

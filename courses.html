@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity CodeMan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- color css files -->
+    <link rel="stylesheet" href="./css/color-1.css" title="Pink   color-1 #d93459" class="altenate-style">
+    <link rel="stylesheet" href="./css/color-2.css" title="Yellow color-2 #ec9412" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-3.css" title="Green  color-3 #1fc586" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-4.css" title="Blue   color-4 #2eb1ed" class="altenate-style" disabled>
+    <link rel="stylesheet" href="./css/color-5.css" title="Red    color-5 #cc3a3b" class="altenate-style" disabled>
+</head>
+<body>
+
+    <section class="customizer">
+        <div class="themeCus">
+            <div class="style_switcher_icon">
+                <div></div><div></div><div></div>
+            </div>
+            <div class="style_switcher_menu">
+                <div class="style_menu">
+                    <div class="styleBx">
+                        <h2>Theme Customizer</h2>
+                    </div>
+                    <div class="styleBx">
+                        <h2>Theme Colors</h2>
+                        <div class="colorbox">
+                            <div class="color color-1" onclick="setActiveStyle('Pink   color-1 #d93459')"></div>
+                            <div class="color color-2" onclick="setActiveStyle('Yellow color-2 #ec9412')"></div>
+                            <div class="color color-3" onclick="setActiveStyle('Green  color-3 #1fc586')"></div>
+                            <div class="color color-4" onclick="setActiveStyle('Blue   color-4 #2eb1ed')"></div>
+                            <div class="color color-5" onclick="setActiveStyle('Red    color-5 #cc3a3b')"></div>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle light" id="toggledark">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Dark Mode</h3>
+                        </div>
+                    </div>
+                    <div class="styleBx">
+                        <div class="theme box">
+                            <div class="toggle steel" id="togglesteel">
+                                <div class="mode"></div>
+                            </div>
+                            <h3>Glass Mode</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- effect -->
+    <div class="CirclesEffect">
+        <div class="CircleEffect"></div>
+        <div class="CircleEffect"></div>
+    </div>
+
+    <div class="main">
+        
+        <!-- header section -->
+        <header class="header">
+            <div class="header_container">
+                <div class="row">
+                    <div class="logo">
+                        <span class="code">Code</span>
+                        <span class="man">Man</span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a>Courses</a>
+                                <ul>
+                                    <li><a>Courses</a></li>
+                                    <li><a href="./courseDetail.html">Course Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Pages</a>
+                                <ul>
+                                    <li><a href="./login.html">Log In</a></li>
+                                    <li><a href="./signup.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="section_container">
+                <a href="./index.html" class="skin">Home</a>
+                <span>/</span>
+                <a>Courses</a>
+            </div>
+            
+            <!-- courses section -->
+            <section class="coursesSec section" id="courses">
+                <div class="section_title">
+                    <h2 data_heading="">Find Right Way & Course</h2>
+                </div>
+                <ul class="box list_names">
+                    <li class="list active" data_filter="all">All</li>
+                    <li class="list" data_filter="food">Food</li>
+                    <li class="list" data_filter="tour">Tour</li>
+                    <li class="list" data_filter="photography">Photogarphy</li>
+                    <li class="list" data_filter="web_devloper">Web Devloper</li>
+                </ul>
+                <div class="course_product">
+                    <!-- 01 -->
+                    <div class="itemBox course_deBx" data_item="web_devloper">
+                        <div class="course_img">
+                            <img class="img" src="./Img/I.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Web Devlopment for Beginners</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/09.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Chris Paul</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>855</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>189</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="itemBox course_deBx" data_item="photography">
+                        <div class="course_img">
+                            <img class="img" src="./Img/H.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Photography for Beginners</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/10.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Richard Jans</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>45</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>49</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="itemBox course_deBx" data_item="tour">
+                        <div class="course_img">
+                            <img class="img" src="./Img/D.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Tourism Trainer For Beginner</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/04.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Rina Gal</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>198</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>159</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="itemBox course_deBx" data_item="web_devloper">
+                        <div class="course_img">
+                            <img class="img" src="./Img/M.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Full Web Devlopment for Beginners</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/03.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Robert Paul</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>75</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>79</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 05 -->
+                    <div class="itemBox course_deBx" data_item="food">
+                        <div class="course_img">
+                            <img class="img" src="./Img/B.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Every Food For Eat</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/02.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>John Rou</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>1.5K</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>149</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 06 -->
+                    <div class="itemBox course_deBx" data_item="tour">
+                        <div class="course_img">
+                            <img class="img" src="./Img/Q.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Tourism For Long Journey</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/04.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Rina Gal</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>155</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>49</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 07 -->
+                    <div class="itemBox course_deBx" data_item="food">
+                        <div class="course_img">
+                            <img class="img" src="./Img/o.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Food is Good For Health</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/02.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>John Rou</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>2.1K</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>79</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 08 -->
+                    <div class="itemBox course_deBx" data_item="photography">
+                        <div class="course_img">
+                            <img class="img" src="./Img/K.jpg">
+                        </div>
+                        <div class="course_name">
+                            <p>Marvel Photography for Students</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="./Img/People/13.jpg">
+                            </div>
+                            <div class="provider_name">
+                                <p>Robert Gill</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>49</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>139</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="courses_btn box middle">
+                    <a class="btn less_course dis_none">Show Less</a>
+                    <a class="btn more_course dis_none">Show More</a>
+                    <a class="btn view_course">View More ...</a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="row box">
+                    <div class="context">
+                        <h1><span class="code">Code</span><span class="man">Man</span></h1>
+                        <div class="context_text">
+                            <p>About</p>
+                            <p>What We Offer</p>
+                            <p>Careeers</p>
+                            <p>Certificates</p>
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Learning</h1>
+                        <div class="context_text">
+                            <p>Get The App</p>
+                            <p>Testimonials</p>
+                            <p>Pricing</p>
+                            <p>Faq</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>More</h1>
+                        <div class="context_text">
+                            <p>Affiliates</p>
+                            <p>Become A course Creater</p>
+                            <p>Training Webinars</p>
+                            <p>Free Personality Test</p>
+                            <p>Help And Support</p>
+                        </div>
+                    </div>
+                    <div class="context">
+                        <h1>Get In Touch</h1>
+                        <div class="context_text">
+                            <p>Facebook</p>
+                            <p>Twitter</p>
+                            <p>Instagram</p>
+                            <p>YouTube</p>
+                            <p>Linkdin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+
+    <script src="./theme.js"></script>
+    <script>
+        // courses filter
+        let list = document.querySelectorAll('.list');
+        let itemBox = document.querySelectorAll('.itemBox');
+
+        for(let i = 0; i< list.length; i++){
+            list[i].addEventListener('click', function(){
+                for(let j = 0; j<list.length; j++){
+                    list[j].classList.remove('active');
+                };
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data_filter')
+                for(let k = 0; k< itemBox.length; k++){
+                    itemBox[k].classList.remove('active');
+                    itemBox[k].classList.add('hide');
+
+                    if(itemBox[k].getAttribute('data_item') == dataFilter || dataFilter == 'all'){
+                    itemBox[k].classList.remove('hide');
+                    itemBox[k].classList.add('active');
+                    }
+                };
+            });
+        };
+
+        // more course
+        const courseBtn = document.querySelector('.view_course'),
+        lessbtn = document.querySelector('.less_course'),
+        morebtn = document.querySelector('.more_course'),
+        newCourse = document.getElementsByClassName('dis_course'),
+        course = document.querySelector('.course_product'),
+        courses = [
+            courses1 = {
+                data: 'food',
+                img: './Img/P.jpg',
+                title: 'Best Food For Eat',
+                people: './Img/People/11.jpg',
+                name: 'Richard James'
+            },
+            courses2 = {
+                data: 'tour',
+                img: './Img/L.jpg',
+                title: 'Tour For Life Time',
+                people: './Img/People/10.jpg',
+                name: 'James Bond'
+            },
+            courses3 = {
+                data: 'photography',
+                img: './Img/K.jpg',
+                title: 'Photography : Membreble Time',
+                people: './Img/People/13.jpg',
+                name: 'Robert Gill'
+            },
+            courses4 = {
+                data: 'web_devloper',
+                img: './Img/M.jpg',
+                title: 'Web Devlopment for Any Person',
+                people: './Img/People/09.jpg',
+                name: 'Chris Paul'
+            },
+            courses5 = {
+                data: 'food',
+                img: './Img/o.jpg',
+                title: 'Food For Family',
+                people: './Img/People/11.jpg',
+                name: 'Richard James'
+            },
+            courses6 = {
+                data: 'tour',
+                img: './Img/Q.jpg',
+                title: 'See The World',
+                people: './Img/People/10.jpg',
+                name: 'James Bond'
+            },
+            courses7 = {
+                data: 'photography',
+                img: './Img/E.jpg',
+                title: 'Eye of Camera',
+                people: './Img/People/13.jpg',
+                name: 'Robert Gill'
+            },
+            courses8 = {
+                data: 'web_devloper',
+                img: './Img/N.jpg',
+                title: 'Devlopment is My Life',
+                people: './Img/People/09.jpg',
+                name: 'Chris Paul'
+            }
+        ];
+
+        courseBtn.addEventListener('click', () => {
+            lessbtn.classList.remove('dis_none');
+            morebtn.classList.add('dis_none');
+            for(i=0; i<courses.length; i++){
+                let randomNumber = Math.floor(Math.random() * courses.length);
+                let studentsNumber = Math.floor(Math.random() * 549);
+                let feesNumber = (Math.floor(Math.random() * 800) - 1);
+                course.innerHTML = course.innerHTML + `
+                <div class="itemBox course_deBx dis_course" data_item="${courses[randomNumber].data}">
+                        <div class="course_img">
+                            <img class="img" src="${courses[randomNumber].img}">
+                        </div>
+                        <div class="course_name">
+                            <p>${courses[randomNumber].title}</p>
+                        </div>
+                        <div class="course_provider box">
+                            <div class="provider_img">
+                                <img class="img" src="${courses[randomNumber].people}">
+                            </div>
+                            <div class="provider_name">
+                                <p>${courses[randomNumber].name}</p>
+                            </div>
+                        </div>
+                        <div class="course_review box">
+                            <div class="stars">
+                                <div class="star_nu" title="Rate/Stars of Course">(<span id="course_star">5</span>)<span class="star_icon"> ⋆⋆⋆⋆⋆</span></div>
+                            </div>
+                            <div class="students">
+                                <div class="stu_nu" title="Students">(<span>${studentsNumber}</span>)</div>
+                            </div>
+                            <div class="fees">
+                                <div class="fees_nu" title="Fees">$<span>${feesNumber}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                itemBox = document.querySelectorAll('.itemBox');
+            }
+            // newCourse.classList.add('dis_course');
+        })
+
+        lessbtn.addEventListener('click', () => {
+            morebtn.classList.remove('dis_none');
+            lessbtn.classList.add('dis_none');
+            for(i=0; i<newCourse.length; i++){
+                newCourse[i].classList.add('dis_none');
+            }
+        })
+
+        morebtn.addEventListener('click', () => {
+            lessbtn.classList.remove('dis_none');
+            morebtn.classList.add('dis_none');
+            for(i=0; i<newCourse.length; i++){
+                newCourse[i].classList.remove('dis_none');
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

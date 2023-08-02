@@ -1,0 +1,8 @@
+:root{
+    --skin: #4682b4 !important;
+    --skin-2: #b22222 !important;
+    --skin-bg: #4682b41a !important;
+}
+.color-4{
+    border-radius: 10px !important;
+}
